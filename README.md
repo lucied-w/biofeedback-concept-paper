@@ -60,7 +60,7 @@ respiratory difference from baseline to stressor.
 
 # Plots for Physiological change
 
-![](Untitled_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->![](Untitled_files/figure-gfm/unnamed-chunk-3-2.png)<!-- -->![](Untitled_files/figure-gfm/unnamed-chunk-3-3.png)<!-- -->
+![](biofeedback_concept_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->![](biofeedback_concept_files/figure-gfm/unnamed-chunk-3-2.png)<!-- -->![](biofeedback_concept_files/figure-gfm/unnamed-chunk-3-3.png)<!-- -->
 
 # Respiratory analysis
 
@@ -79,7 +79,7 @@ and the difference in SDNN (stressor - baseline)
     ##       cor 
     ## 0.4358572
 
-![](Untitled_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](biofeedback_concept_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # Questionnaire results
 
@@ -99,7 +99,7 @@ SDNN
     ## mean of x mean of y 
     ##  1.547170  5.509434
 
-![](Untitled_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](biofeedback_concept_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
     ## 
     ##  Pearson's product-moment correlation
@@ -113,16 +113,16 @@ SDNN
     ##       cor 
     ## 0.4809295
 
-![](Untitled_files/figure-gfm/unnamed-chunk-5-2.png)<!-- -->
+![](biofeedback_concept_files/figure-gfm/unnamed-chunk-5-2.png)<!-- -->
 
 # Correlation matrices for SDNN
 
 P-values unadjusted (top) and adjusted (bottom) for multiple comparisons
 
-![](Untitled_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->![](Untitled_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
+![](biofeedback_concept_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->![](biofeedback_concept_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
 
 # Correlation matrices for Respiration
 
 P-values unadjusted (top) and adjusted (bottom) for multiple comparisons
 
-![](Untitled_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->![](Untitled_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
+![](biofeedback_concept_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->![](biofeedback_concept_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
