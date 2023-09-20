@@ -32,12 +32,12 @@ Initial analysis was conducted using a paired t-test for the HR difference from 
 
 
 ``` {r echo = FALSE}
-resp <- read.csv("resp_percentages.csv")
-quest <- read.csv("biofeedbackQuestionnaires.csv")
+resp <- read.csv("data/resp_percentages.csv")
+quest <- read.csv("data/biofeedbackQuestionnaires.csv")
 
-SDNN <- read.csv("SDNN.csv")
-HR <- read.csv("HR.csv")
-MeanRR <- read.csv("MeanRR.csv")
+SDNN <- read.csv("data/SDNN.csv")
+HR <- read.csv("data/HR.csv")
+MeanRR <- read.csv("data/MeanRR.csv")
 
 
 ###cardiac measures are listed with ids from lowest to highest 
