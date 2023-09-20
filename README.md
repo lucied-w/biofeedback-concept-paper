@@ -9,6 +9,10 @@ mini-games, to both teach participants a physiological regulation
 technique and subsequently to apply this technique in a stressful
 biofefeedback environment.
 
+### Code
+
+Analysis was conducted using R version 4.3.1. The main results are reported here, but can also be run indepdently by downloading the CSV files and the biofeedback-concept-paper.R script. 
+
 ### Study Design
 
 Participants physiological measurements were taken at baseline (seated
