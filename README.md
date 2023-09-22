@@ -13,6 +13,8 @@ biofefeedback environment.
 
 Analysis was conducted using R version 4.3.1. The main results are reported here, but can also be run indepdently by downloading the data files (in the /data folder) and the biofeedback-concept-paper.R script. 
 
+Raw data are available, and analysis can be run using the biofeedback_systole.py script. There is also a short reshaping R script that transforms the Systole ouput into the csv files available in the /data folder.
+
 ### Study Design
 
 Participants physiological measurements were taken at baseline (seated
