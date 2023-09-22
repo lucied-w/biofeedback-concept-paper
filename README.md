@@ -11,7 +11,7 @@ biofefeedback environment.
 
 ### Code
 
-Analysis was conducted using R version 4.3.1. The main results are reported here, but can also be run indepdently by downloading the data files and the biofeedback-concept-paper.R script. 
+Analysis was conducted using R version 4.3.1. The main results are reported here, but can also be run indepdently by downloading the data files (in the /data folder) and the biofeedback-concept-paper.R script. 
 
 ### Study Design
 
