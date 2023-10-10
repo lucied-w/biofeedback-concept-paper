@@ -22,7 +22,6 @@ MeanRR <- read.csv("MeanRR.csv")
 
 ###cardiac measures are listed with ids from lowest to highest 
 ##so it's important to make sure that the other dataframes are too
-##this is definitely not something I messed up before 
 resp <- resp[order(resp$p_id),]
 quest <- quest[order(quest$p_id),]
 
