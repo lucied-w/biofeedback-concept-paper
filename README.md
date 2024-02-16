@@ -67,19 +67,19 @@ SDNN and respiratory differences from baseline to stressor.
 
 ## HR and cvSDNN change: baseline, training, stressor
 
-![unnamed-chunk-3-2](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/ef904b76-0cff-49d2-801c-902ff8a7a519)
-![unnamed-chunk-3-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/3c6cdf6d-2133-4da0-af0d-4c0ac4a3d9f9)
+![unnamed-chunk-3-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/acaef536-3c1c-4e3b-b95b-d1ef0eb11747)
+![unnamed-chunk-3-2](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/c26cc860-963f-4b0b-a922-9b11055bbf21)
+
 
 ## HR And cvSDNN for baseline/stressor
 
-![unnamed-chunk-3-4](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/49e09758-1533-4a95-bcce-bdd43016302d)
-
+![unnamed-chunk-4-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/913d3082-ff23-426d-87cd-f16fc29adf1a)
 
 # Respiratory analysis
 
 ## Respiration change baseline to stressor
 
-![unnamed-chunk-3-5](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/0ae66de5-9bfa-4b7e-bb2b-fbe14fb4e433)
+![unnamed-chunk-5-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/5881bc6e-7d63-4fd2-b594-adbc1e2784c6)
 
 
 ## Correlation between the difference in respiration (stressor - baseline) 
@@ -99,8 +99,7 @@ SDNN and respiratory differences from baseline to stressor.
     ## 0.4358572
 
 
-![unnamed-chunk-6-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/c459bfb3-d387-41d3-9214-305ea0520028)
-
+![unnamed-chunk-6-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/ccada796-fc56-414e-8f60-3e3b9a6d87bd)
 
 # Questionnaire results
 
@@ -119,8 +118,10 @@ SDNN
     ## sample estimates:
     ## mean of x mean of y 
     ##  1.547170  5.509434
+    
+![unnamed-chunk-7-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/083f8b13-2d6f-4e6c-8a68-349d2c174e8d)
 
-![](biofeedback_concept_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
 
 
 
