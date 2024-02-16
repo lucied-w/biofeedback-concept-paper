@@ -65,17 +65,26 @@ SDNN and respiratory differences from baseline to stressor.
 
 # Plots for Physiological change
 
-![unnamed-chunk-3-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/5447e0ba-eba4-4882-88ef-ad797fa28a39)
-![unnamed-chunk-3-2](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/112c2f5c-a301-4935-9c4e-89c24536a8b4)
-![unnamed-chunk-3-3](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/e4a58579-693c-4361-9e3d-c441be7509b3)
-![unnamed-chunk-3-4](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/549611c1-567f-4c6e-bc91-3ebbaf8d99c9)
+## HR and cvSDNN change: baseline, training, stressor
 
-![unnamed-chunk-3-5](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/2900a81d-9b85-4c94-8fb8-f022eae5fb0a)
+![unnamed-chunk-3-2](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/ef904b76-0cff-49d2-801c-902ff8a7a519)
+![unnamed-chunk-3-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/3c6cdf6d-2133-4da0-af0d-4c0ac4a3d9f9)
+
+## HR And cvSDNN for baseline/stressor
+
+![unnamed-chunk-3-4](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/49e09758-1533-4a95-bcce-bdd43016302d)
+
 
 # Respiratory analysis
 
-Correlation between the difference in respiration (stressor - baseline)
-and the difference in SDNN (stressor - baseline)
+## Respiration change baseline to stressor
+
+![unnamed-chunk-3-5](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/0ae66de5-9bfa-4b7e-bb2b-fbe14fb4e433)
+
+
+## Correlation between the difference in respiration (stressor - baseline) 
+## and the difference in SDNN (stressor - baseline)
+
 
     ## 
     ##  Pearson's product-moment correlation
@@ -89,7 +98,9 @@ and the difference in SDNN (stressor - baseline)
     ##       cor 
     ## 0.4358572
 
-![unnamed-chunk-4-2](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/4903b420-2706-4f3b-b898-3bdbe9841356)
+
+![unnamed-chunk-6-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/c459bfb3-d387-41d3-9214-305ea0520028)
+
 
 # Questionnaire results
 
