@@ -24,45 +24,44 @@ stressor (biofeedback horror).
 The physiological measurements reported here are Heart Rate (HR), heart
 rate variability as indexed by SDNN, and respiration rate (resp).
 
-Initial analysis was conducted using a paired t-test for the HR
-difference from baseline to stressor, and Signs tests for the SDNN and
-respiratory difference from baseline to stressor.
+Initial analysis was conducted using paired T tests for the HR, 
+SDNN and respiratory differences from baseline to stressor.
 
-    ## 
-    ##  Paired t-test
-    ## 
-    ## data:  HR$HR_baseline and HR$HR_stress
-    ## t = -3.3451, df = 43, p-value = 0.001714
-    ## alternative hypothesis: true mean difference is not equal to 0
-    ## 95 percent confidence interval:
-    ##  -10.531906  -2.609312
-    ## sample estimates:
-    ## mean difference 
-    ##       -6.570609
-
-    ## 
-    ##  Dependent-samples Sign-Test
-    ## 
-    ## data:  SDNN$SDNN_baseline and SDNN$SDNN_stress
-    ## S = 9, number of differences = 44, p-value = 0.000106
-    ## alternative hypothesis: true median difference is not equal to 0
-    ## 95.1 percent confidence interval:
-    ##  -4.111754 -1.629125
-    ## sample estimates:
-    ## median of the differences 
-    ##                  -2.57893
-
-    ## 
-    ##  Dependent-samples Sign-Test
-    ## 
-    ## data:  resp$resp_baseline and resp$resp_stress
-    ## S = 29, number of differences = 29, p-value = 3.725e-09
-    ## alternative hypothesis: true median difference is not equal to 0
-    ## 97.6 percent confidence interval:
-    ##  3.691027 9.072613
-    ## sample estimates:
-    ## median of the differences 
-    ##                  6.707505
+        ## 
+        ##  Paired t-test
+        ## 
+        ## data:  SDNN$SDNN_baseline and SDNN$SDNN_stress
+        ## t = -4.6496, df = 43, p-value = 0.0000316
+        ## alternative hypothesis: true mean difference is not equal to 0
+        ## 95 percent confidence interval:
+        ##  -4.199607 -1.658689
+        ## sample estimates:
+        ## mean difference 
+        ##       -2.929148
+        
+        ## 
+        ##  Paired t-test
+        ## 
+        ## data:  HR$HR_baseline and HR$HR_stress
+        ## t = -3.3451, df = 43, p-value = 0.001714
+        ## alternative hypothesis: true mean difference is not equal to 0
+        ## 95 percent confidence interval:
+        ##  -10.531906  -2.609312
+        ## sample estimates:
+        ## mean difference 
+        ##       -6.570609
+        
+        ## 
+        ##  Paired t-test
+        ## 
+        ## data:  resp$resp_baseline and resp$resp_stress
+        ## t = 7.6115, df = 28, p-value = 0.00000002724
+        ## alternative hypothesis: true mean difference is not equal to 0
+        ## 95 percent confidence interval:
+        ##  5.205657 9.039254
+        ## sample estimates:
+        ## mean difference 
+        ##        7.122455
 
 # Plots for Physiological change
 
