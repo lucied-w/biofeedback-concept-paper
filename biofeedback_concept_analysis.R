@@ -96,9 +96,9 @@ ggplot(gg_HR, aes(x= category, y=value, fill=category)) +
   geom_point(show.legend = F)+
   # geom_line() joins the pa"ired datapoints
   scale_fill_manual(values=cbbPalette)+
-  ylab("Mean HR") +
+  ylab("HR") +
   xlab("")+
-  ggtitle("Mean HR in Baseline, Training and Stressor")+
+  ggtitle(" HR in Baseline, Training and Stressor")+
   theme(panel.background = element_blank())
 
 
@@ -155,9 +155,9 @@ HR_plot <- ggplot(gg_HR_stress_bl, aes(x=category, y=value, fill=category)) +
   scale_fill_manual(values=cbPalette)+
   # geom_line() joins the paired datapoints
   geom_line(aes(group=paired),  alpha = 0.4) +
-  ylab("Mean HR") +
+  ylab(" HR") +
   xlab("")+
-  ggtitle("Mean HR for Baseline and Stressor")+
+  ggtitle(" HR for Baseline and Stressor")+
   theme(panel.background = element_blank())
 
 
@@ -175,7 +175,7 @@ SDNN_plot <- ggplot(gg_SDNN_stress_bl, aes(x=category, y=value, fill=category)) 
   geom_line(aes(group=paired),  alpha = 0.4) +
   ylab("SDNN") +
   xlab("")+
-  ggtitle("Mean SDNN for Baseline and Stressor")+
+  ggtitle(" SDNN for Baseline and Stressor")+
   theme(panel.background = element_blank())
 
 SDNN_plot
@@ -280,4 +280,54 @@ resp_no_resp <- data.frame('no_resp_anx_mean' = mean(resp_no_dat$trait_anx),
 
 rm(no_resp, resp_no_dat, HR_no_resp, HR_resp)                           
                            
+
+################### QUESTIONNAIRE ANALYSES ################
+
+##sanity check - is there a difference in qualitative stressor/training stress ratings? 
+t.test(quest$boat_score, quest$dungeon_score)
+
+##make sure the rest of the questionnaires match up to the cardiac variables
+quest <- quest[(quest$p_id %in% SDNN$p_id),]
+
+
+####plotting the stress scores 
+gg_stress <- data.frame(value  = c(quest$boat_score, quest$dungeon_score),
+                        category = c(rep('training', 44), rep('stress', 44)),
+                        paired = c( 1:44, 1:44))
+
+
+ggplot(gg_stress, aes(x=reorder(category, value), y=value, fill=category)) +
+  geom_boxplot(show.legend = F)+
+  scale_fill_manual(values=cbPalette)+
+  # geom_point() is used to make points at data values
+  # geom_line() joins the paired datapoints
+  ylab("Stress score (1-10)") +
+  xlab("")+
+  ggtitle("Stress scores for training and stress")+
+  theme(panel.background = element_blank())
+
+
+SDNN_resp <- SDNN[(SDNN$p_id %in% resp$p_id),] ##subset the SDNN dataframe by the ps who have resp
+resp_SDNN <- resp[(resp$p_id %in% SDNN$p_id), ] ## make sure the breaths have corresponding cardio measures
+HR_resp <- HR[(HR$p_id %in% resp$p_id),] ##ditto with the HR
+adherence_resp <- adherence[(adherence$p_id %in% resp_SDNN$p_id),]
+
+##merge together into one dataframe for the correlations/plots
+resp_cardio <- merge(SDNN_resp, resp_SDNN, by = 'p_id')
+resp_cardio <- merge(resp_cardio, HR_resp, by = 'p_id')
+resp_cardio <- merge(resp_cardio, adherence_resp, by = "p_id")
+
+rm(SDNN_resp, resp_SDNN, HR_resp, adherence_resp)
+
+###corrlating the SDNN differences in stressor/baseline condition with resp differences in stress/bl
+cor.test(resp_cardio$resp_stress_bl_diff, resp_cardio$SDNN_stress_BL_diff)
+cor.test(resp_cardio$resp_stress_bl_diff, resp_cardio$HR_stress_BL_diff)
+
+###plotting the correlation between resp rate and SDNN
+ggscatter(resp_cardio, x = 'resp_stress_bl_diff', y = 'SDNN_stress_BL_diff',
+          add = "reg.line", conf.int = TRUE,
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "Difference in resp rate (dungeon - baseline)", ylab = "cvSDNN diff (dungeon - baseline)")
+
+
 
