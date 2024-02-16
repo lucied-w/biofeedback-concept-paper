@@ -122,6 +122,8 @@ SDNN
 
 ![](biofeedback_concept_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
+
+
     ## 
     ##  Pearson's product-moment correlation
     ## 
