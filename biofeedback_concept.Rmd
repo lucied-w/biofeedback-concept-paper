@@ -82,12 +82,9 @@ HR$HR_training_stress_diff <- HR$HR_stress - HR$HR_training
 
 
 ##Paired t tests to see whether the difference from baseline to stress conditions is significant 
-#t.test(SDNN$SDNN_baseline, SDNN$SDNN_stress, paired = T)
+t.test(SDNN$SDNN_baseline, SDNN$SDNN_stress, paired = T)
 t.test(HR$HR_baseline, HR$HR_stress, paired = T)
-
-###Sign test for SDNN and respiration differences
-SignTest(SDNN$SDNN_baseline, SDNN$SDNN_stress)
-SignTest(resp$resp_baseline, resp$resp_stress)
+t.test(resp$resp_baseline, resp$resp_stress, paired = T)
 
 
 ```
