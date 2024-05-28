@@ -71,6 +71,19 @@ SDNN and respiratory differences from baseline to stressor.
 ![unnamed-chunk-3-2](figure-gfm/unnamed-chunk-3-2.png)
 
 
+## ANOVA for SDNN between conditions (supplement)
+
+        ## ANOVA Table (type III tests)
+        ## 
+        ##     Effect DFn DFd      F           p p<.05  ges
+        ## 1 category   2  86 17.289 0.000000489     * 0.13
+        ## # A tibble: 3 × 10
+        ##   .y.   group1   group2    n1    n2 statistic    df       p   p.adj p.adj.signif
+        ## * <chr> <chr>    <chr>  <int> <int>     <dbl> <dbl>   <dbl>   <dbl> <chr>       
+        ## 1 value baseline train…    44    44   -5.88      43 5.43e-7 1.63e-6 ****        
+        ## 2 value baseline stres…    44    44   -4.65      43 3.16e-5 9.48e-5 ****        
+        ## 3 value training stres…    44    44   -0.0636    43 9.5 e-1 1   e+0 ns
+
 ## HR And cvSDNN for baseline/stressor
 
 ![unnamed-chunk-5-1](figure-gfm/unnamed-chunk-5-1.png)
