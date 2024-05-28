@@ -14,7 +14,7 @@ library(rstatix)
 ################ Read in data, normalise SDNN values ################ 
 ##################################################################### 
 
-setwd("/Users/luciedaniel-watanabe/Desktop/NT:PhD/biofeedback/paper writeup/data")
+setwd("PATH")
 resp <- read.csv("resp_percentages.csv")
 quest <- read.csv("biofeedbackQuestionnaires.csv")
 
