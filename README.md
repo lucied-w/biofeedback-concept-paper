@@ -1,6 +1,6 @@
 Biofeedback Proof of Concept Study
 ================
-2023-09-19
+2024-05-28
 
 # Background
 
@@ -67,19 +67,23 @@ SDNN and respiratory differences from baseline to stressor.
 
 ## HR and cvSDNN change: baseline, training, stressor
 
-![unnamed-chunk-3-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/acaef536-3c1c-4e3b-b95b-d1ef0eb11747)
-![unnamed-chunk-3-2](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/c26cc860-963f-4b0b-a922-9b11055bbf21)
+![unnamed-chunk-3-1](figure-gfm/unnamed-chunk-3-1.png)
+![unnamed-chunk-3-2](figure-gfm/unnamed-chunk-3-2.png)
 
 
 ## HR And cvSDNN for baseline/stressor
 
-![unnamed-chunk-4-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/913d3082-ff23-426d-87cd-f16fc29adf1a)
+![unnamed-chunk-5-1](figure-gfm/unnamed-chunk-5-1.png)
 
 # Respiratory analysis
 
 ## Respiration change baseline to stressor
 
-![unnamed-chunk-5-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/5881bc6e-7d63-4fd2-b594-adbc1e2784c6)
+![unnamed-chunk-6-1](figure-gfm/unnamed-chunk-6-1.png)
+
+## Histogram for respiratory adherence (4 breaths/min - actual breaths/min)
+
+![unnamed-chunk-7-1](figure-gfm/unnamed-chunk-7-1.png)
 
 
 ## Correlation between the difference in respiration (stressor - baseline) 
@@ -99,7 +103,7 @@ SDNN and respiratory differences from baseline to stressor.
     ## 0.4358572
 
 
-![unnamed-chunk-6-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/ccada796-fc56-414e-8f60-3e3b9a6d87bd)
+![unnamed-chunk-7-2](figure-gfm/unnamed-chunk-7-2.png)
 
 # Questionnaire results
 
@@ -119,23 +123,9 @@ SDNN
     ## mean of x mean of y 
     ##  1.547170  5.509434
     
-![unnamed-chunk-7-1](https://github.com/lucied-w/biofeedback-concept-paper/assets/145454288/083f8b13-2d6f-4e6c-8a68-349d2c174e8d)
+![unnamed-chunk-8-1](figure-gfm/unnamed-chunk-8-1.png)
 
 
 
 
-
-    ## 
-    ##  Pearson's product-moment correlation
-    ## 
-    ## data:  cardio_quest$stress_diff and cardio_quest$SDNN_training_stress_diff
-    ## t = 3.5549, df = 42, p-value = 0.0009513
-    ## alternative hypothesis: true correlation is not equal to 0
-    ## 95 percent confidence interval:
-    ##  0.2147043 0.6806305
-    ## sample estimates:
-    ##       cor 
-    ## 0.4809295
-
-![](biofeedback_concept_files/figure-gfm/unnamed-chunk-5-2.png)<!-- -->
 
