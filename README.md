@@ -67,8 +67,9 @@ SDNN and respiratory differences from baseline to stressor.
 
 ## HR and cvSDNN change: baseline, training, stressor
 
-![unnamed-chunk-3-1](figure-gfm/unnamed-chunk-3-1.png)
-![unnamed-chunk-3-2](figure-gfm/unnamed-chunk-3-2.png)
+![unnamed-chunk-3-2](https://github.com/user-attachments/assets/9fb286a2-661d-422d-ab89-04fc8fa2694b)
+![unnamed-chunk-3-1](https://github.com/user-attachments/assets/5589f259-5d7d-4f55-b2b8-685e9f4ed83b)
+
 
 
 ## ANOVA for SDNN between conditions (supplement)
@@ -86,8 +87,7 @@ SDNN and respiratory differences from baseline to stressor.
 
 ## HR And cvSDNN for baseline/stressor
 
-![unnamed-chunk-3-1](https://github.com/user-attachments/assets/400a855e-7086-4be1-b9ca-4336222ac29b)
-![unnamed-chunk-3-2](https://github.com/user-attachments/assets/9b6ffb71-31d7-4e5a-9f97-cd785339709d)
+![unnamed-chunk-5-1](https://github.com/user-attachments/assets/7465c594-a94c-4440-b80e-e82f95e93dbc)
 
 # Respiratory analysis
 
