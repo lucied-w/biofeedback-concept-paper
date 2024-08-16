@@ -86,17 +86,19 @@ SDNN and respiratory differences from baseline to stressor.
 
 ## HR And cvSDNN for baseline/stressor
 
-![unnamed-chunk-5-1](figure-gfm/unnamed-chunk-5-1.png)
+![unnamed-chunk-3-1](https://github.com/user-attachments/assets/400a855e-7086-4be1-b9ca-4336222ac29b)
+![unnamed-chunk-3-2](https://github.com/user-attachments/assets/9b6ffb71-31d7-4e5a-9f97-cd785339709d)
 
 # Respiratory analysis
 
 ## Respiration change baseline to stressor
 
-![unnamed-chunk-6-1](figure-gfm/unnamed-chunk-6-1.png)
+![unnamed-chunk-6-1](https://github.com/user-attachments/assets/ced4a742-49b7-4813-9c86-35abddc1569f)
+
 
 ## Histogram for respiratory adherence (4 breaths/min - actual breaths/min)
 
-![unnamed-chunk-7-1](figure-gfm/unnamed-chunk-7-1.png)
+![unnamed-chunk-7-1](https://github.com/user-attachments/assets/e2b22a7e-c88c-4e97-b42d-35922446857a)
 
 
 ## Correlation between the difference in respiration (stressor - baseline) 
@@ -116,7 +118,13 @@ SDNN and respiratory differences from baseline to stressor.
     ## 0.4358572
 
 
-![unnamed-chunk-7-2](figure-gfm/unnamed-chunk-7-2.png)
+![unnamed-chunk-7-2](https://github.com/user-attachments/assets/3c7e57f6-33f8-4cc0-b2a4-8a834041c16b)
+
+
+# Combined figures for manuscript 
+
+![figure2](https://github.com/user-attachments/assets/8ba7bf78-c535-40b5-bd3c-be68e2db323b)
+
 
 # Questionnaire results
 
@@ -136,8 +144,8 @@ SDNN
     ## mean of x mean of y 
     ##  1.547170  5.509434
     
-![unnamed-chunk-8-1](figure-gfm/unnamed-chunk-8-1.png)
 
+![unnamed-chunk-8-1](https://github.com/user-attachments/assets/4683b9b2-85bf-41d7-abe1-19aa87ec5398)
 
 
 
