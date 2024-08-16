@@ -94,7 +94,7 @@ gg_HR$category <- factor(gg_HR$category, levels = c("baseline", "training", "str
 ggplot(gg_HR, aes(x= category, y=value, fill=category)) +
   geom_boxplot(show.legend = F)+
   # geom_point() is used to make points at data values
-  geom_point(show.legend = F)+
+  #geom_point(show.legend = F)+
   # geom_line() joins the pa"ired datapoints
   scale_fill_manual(values=cbbPalette)+
   theme_minimal()+
@@ -134,7 +134,7 @@ gg_SDNN_supp$category <- factor(gg_SDNN_supp$category, levels = c("baseline", "t
 ggplot(gg_SDNN_supp, aes(x= category, y=value, fill=category)) +
   geom_boxplot(show.legend = F)+
   theme_minimal()+
-  # geom_point() is used to make points at data values
+  #geom_point() is used to make points at data values
   geom_point(show.legend = F)+
   # geom_line() joins the pa"ired datapoints
   scale_fill_manual(values=cbbPalette)+
@@ -148,9 +148,9 @@ ggplot(gg_SDNN_supp, aes(x= category, y=value, fill=category)) +
   theme(axis.text = element_text(colour = "#00000095")) +
   theme(axis.title.x = element_text(face="bold")) +
   theme(axis.title.y = element_text(face="bold")) +
-  theme(axis.title.x = element_text(size = 12)) +
-  theme(axis.title.y = element_text(size = 12)) +
-  theme(axis.text=element_text(size=11))+
+  theme(axis.title.x = element_text(size = 14)) +
+  theme(axis.title.y = element_text(size = 14)) +
+  theme(axis.text=element_text(size=12))+
   theme(axis.title.x = element_text(margin=margin(13,0,0,0))) +
   theme(axis.title.y = element_text(margin=margin(0,13,0,0))) +
   theme(legend.text = element_text(size=12))+
@@ -180,24 +180,26 @@ gg_HR_stress_bl <- data.frame(value  = c(HR$HR_baseline, HR$HR_stress),
 ###save the HR and SDNN plots so they can be combined into one image
 HR_plot <- ggplot(gg_HR_stress_bl, aes(x=category, y=value, fill=category)) +
   geom_boxplot(show.legend = F, coef = 0)+
+  # stat_boxplot(geom = "errorbar",
+  #              width = 0.15)+
   theme_minimal()+
   # geom_point() is used to make points at data values
   geom_point(show.legend = F)+
   scale_fill_manual(values=cbPalette)+
   #geom_line(aes(group=paired),  alpha = 0.4) +
-  ylab(" HR") +
+  ylab("HR") +
   xlab("Condition")+
-  ggtitle(" HR for Baseline and Stressor")+
+  ggtitle("HR for Baseline and Stressor")+
   theme(plot.title = element_text(hjust = 0.5)) +
   theme(plot.title = element_text(margin=margin(0,0,13,0))) +
   theme(plot.title=element_text(face="bold")) +
-  theme(plot.title=element_text(size=13)) +
+  theme(plot.title=element_text(size=15)) +
   theme(axis.text = element_text(colour = "#00000095")) +
-  theme(axis.title.x = element_text(face="bold")) +
-  theme(axis.title.y = element_text(face="bold")) +
-  theme(axis.title.x = element_text(size = 12)) +
-  theme(axis.title.y = element_text(size = 12)) +
-  theme(axis.text=element_text(size=11))+
+  #theme(axis.title.x = element_text(face="bold")) +
+  #theme(axis.title.y = element_text(face="bold")) +
+  theme(axis.title.x = element_text(size = 15)) +
+  theme(axis.title.y = element_text(size = 17)) +
+  theme(axis.text=element_text(size=13))+
   theme(axis.title.x = element_text(margin=margin(13,0,0,0))) +
   theme(axis.title.y = element_text(margin=margin(0,13,0,0))) +
   theme(legend.text = element_text(size=12))+
@@ -211,11 +213,10 @@ gg_SDNN_stress_bl <- data.frame(value  = c(SDNN$SDNN_baseline, SDNN$SDNN_stress)
 
 SDNN_plot <- ggplot(gg_SDNN_stress_bl, aes(x=category, y=value, fill=category)) +
   geom_boxplot(show.legend = F, coef = 0)+
+  theme_minimal()+
   # geom_point() is used to make points at data values
   geom_point(show.legend = F)+
   scale_fill_manual(values=cbPalette)+
-  theme_minimal()+
-  # geom_line() joins the paired datapoints
   #geom_line(aes(group=paired),  alpha = 0.4) +
   ylab("cvSDNN") +
   xlab("Condition")+
@@ -223,18 +224,43 @@ SDNN_plot <- ggplot(gg_SDNN_stress_bl, aes(x=category, y=value, fill=category)) 
   theme(plot.title = element_text(hjust = 0.5)) +
   theme(plot.title = element_text(margin=margin(0,0,13,0))) +
   theme(plot.title=element_text(face="bold")) +
-  theme(plot.title=element_text(size=13)) +
+  theme(plot.title=element_text(size=15)) +
   theme(axis.text = element_text(colour = "#00000095")) +
-  theme(axis.title.x = element_text(face="bold")) +
-  theme(axis.title.y = element_text(face="bold")) +
-  theme(axis.title.x = element_text(size = 12)) +
-  theme(axis.title.y = element_text(size = 12)) +
-  theme(axis.text=element_text(size=11))+
+  #theme(axis.title.x = element_text(face="bold")) +
+  #theme(axis.title.y = element_text(face="bold")) +
+  theme(axis.title.x = element_text(size = 15)) +
+  theme(axis.title.y = element_text(size = 17)) +
+  theme(axis.text=element_text(size=13))+
   theme(axis.title.x = element_text(margin=margin(13,0,0,0))) +
   theme(axis.title.y = element_text(margin=margin(0,13,0,0))) +
   theme(legend.text = element_text(size=12))+
   theme(legend.key.size = unit(1, 'cm'))+
+  #theme(plot.margin = unit(c(1, 0, 0, 0), "cm"))+
   scale_y_continuous(n.breaks=5) 
+
+# SDNN_plot <- ggplot(gg_SDNN_stress_bl, aes(x=category, y=value, fill=category)) +
+#   geom_boxplot(show.legend = F)+
+#   geom_point(show.legend = F)+
+#   scale_fill_manual(values=cbPalette)+
+#   theme_minimal()+
+#   ylab("cvSDNN") +
+#   xlab("Condition")+
+#   ggtitle("cvSDNN for Baseline and Stressor")+
+#   theme(plot.title = element_text(hjust = 0.5)) +
+#   theme(plot.title = element_text(margin=margin(0,0,13,0))) +
+#   theme(plot.title=element_text(face="bold")) +
+#   theme(plot.title=element_text(size=13)) +
+#   theme(axis.text = element_text(colour = "#00000095")) +
+#   #theme(axis.title.x = element_text(face="bold")) +
+#   #theme(axis.title.y = element_text(face="bold")) +
+#   theme(axis.title.x = element_text(size = 13)) +
+#   theme(axis.title.y = element_text(size = 15)) +
+#   theme(axis.text=element_text(size=12))+
+#   theme(axis.title.x = element_text(margin=margin(13,0,0,0))) +
+#   theme(axis.title.y = element_text(margin=margin(0,13,0,0))) +
+#   theme(legend.text = element_text(size=12))+
+#   theme(legend.key.size = unit(1, 'cm'))+
+#   scale_y_continuous(n.breaks=5) 
 
 SDNN_plot
 
@@ -251,25 +277,25 @@ gg_resp <- data.frame(value  = c( resp$resp_baseline, resp$resp_stress),
 ###plot of all ps for whom we have resp data - change in breathing rate from baseline to dungeon
 resp_box <- ggplot(gg_resp, aes(x=category, y=value, fill=category)) +
   geom_boxplot(show.legend = F, coef = 0)+
+  # stat_boxplot(geom = "errorbar",
+  #              width = 0.15)+
   # geom_point() is used to make points at data values
   scale_fill_manual(values=cbPalette)+
   geom_point(show.legend = F)+
   theme_minimal()+
-  # geom_line() joins the paired datapoints
-  geom_line(aes(group=paired), alpha = 0.4) +
   ylab("Respiration Rate (breaths/min)") +
   xlab("Condition")+
   ggtitle("Respiration Rate for Baseline and Stressor")+
   theme(plot.title = element_text(hjust = 0.5)) +
   theme(plot.title = element_text(margin=margin(0,0,13,0))) +
   theme(plot.title=element_text(face="bold")) +
-  theme(plot.title=element_text(size=13)) +
+  theme(plot.title=element_text(size=15)) +
   theme(axis.text = element_text(colour = "#00000095")) +
-  theme(axis.title.x = element_text(face="bold")) +
-  theme(axis.title.y = element_text(face="bold")) +
-  theme(axis.title.x = element_text(size = 12)) +
-  theme(axis.title.y = element_text(size = 12)) +
-  theme(axis.text=element_text(size=11))+
+  #theme(axis.title.x = element_text(face="bold")) +
+  #theme(axis.title.y = element_text(face="bold")) +
+  theme(axis.title.x = element_text(size = 15)) +
+  theme(axis.title.y = element_text(size = 17)) +
+  theme(axis.text=element_text(size=13))+
   theme(axis.title.x = element_text(margin=margin(13,0,0,0))) +
   theme(axis.title.y = element_text(margin=margin(0,13,0,0))) +
   theme(legend.text = element_text(size=12))+
@@ -308,11 +334,11 @@ h <- ggplot(adherence, aes(x=ad_stress)) +
   theme(plot.title=element_text(face="bold")) +
   theme(plot.title=element_text(size=13)) +
   theme(axis.text = element_text(colour = "#00000095")) +
-  theme(axis.title.x = element_text(face="bold")) +
+  #theme(axis.title.x = element_text(face="bold")) +
   theme(axis.title.y = element_text(face="bold")) +
   theme(axis.title.x = element_text(size = 12)) +
-  theme(axis.title.y = element_text(size = 12)) +
-  theme(axis.text=element_text(size=11))+
+  theme(axis.title.y = element_text(size = 15)) +
+  theme(axis.text=element_text(size=13))+
   theme(axis.title.x = element_text(margin=margin(13,0,0,0))) +
   theme(axis.title.y = element_text(margin=margin(0,13,0,0))) +
   theme(legend.text = element_text(size=12))+
@@ -344,30 +370,33 @@ resp_SDNN_scatter <-
   ggscatter(resp_cardio, x = 'resp_stress_bl_diff', y = 'SDNN_stress_BL_diff',
           add = "reg.line", conf.int = TRUE,
           cor.coef = TRUE, cor.method = "pearson",
-          xlab = "Difference in Respiration Rate (stressor - baseline)", ylab = "cvSDNN difference (stressor - baseline)")+
+          xlab = "Respiration Rate Difference", ylab = "cvSDNN Difference")+
           ggtitle("Correlation between cvSDNN and Respiration Rate")+
           theme_minimal()+
           theme(plot.title = element_text(hjust = 0.5)) +
           theme(plot.title = element_text(margin=margin(0,0,13,0))) +
           theme(plot.title=element_text(face="bold")) +
-          theme(plot.title=element_text(size=13)) +
+          theme(plot.title=element_text(size=15)) +
           theme(axis.text = element_text(colour = "#00000095")) +
-          theme(axis.title.x = element_text(face="bold")) +
-          theme(axis.title.y = element_text(face="bold")) +
-          theme(axis.title.x = element_text(size = 12)) +
-          theme(axis.title.y = element_text(size = 12)) +
-          theme(axis.text=element_text(size=11))+
+          #theme(axis.title.x = element_text(face="bold")) +
+          #theme(axis.title.y = element_text(face="bold")) +
+          theme(axis.title.x = element_text(size = 15)) +
+          theme(axis.title.y = element_text(size = 17)) +
+          theme(axis.text=element_text(size=13))+
           theme(axis.title.x = element_text(margin=margin(13,0,0,0))) +
           theme(axis.title.y = element_text(margin=margin(0,13,0,0))) +
           theme(legend.text = element_text(size=12))+
           theme(legend.key.size = unit(1, 'cm'))+
+          #theme(plot.margin = unit(c(1, 0, 0, 0), "cm"))+
           scale_y_continuous(n.breaks=5)
 
 resp_SDNN_scatter  
  
 
 
-plot_grid(resp_box, HR_plot, SDNN_plot + ylim(0, 30), resp_SDNN_scatter, labels = "AUTO", ncol = 4)
+plot_grid(resp_box, HR_plot, SDNN_plot + ylim(0, 30), resp_SDNN_scatter, labels = "AUTO", ncol = 2)
+
+plot_grid(HR_plot, SDNN_plot + ylim(0, 30), labels = "AUTO")
 
 
 ###checking ps with/without resp data
@@ -397,6 +426,10 @@ rm(no_resp, resp_no_dat, HR_no_resp, HR_resp)
 
 
 ################### QUESTIONNAIRE ANALYSES ################
+
+quest_check <- quest[quest$p_id %in% HR$p_id,]
+
+t.test(quest_check$boat_score, quest_check$dungeon_score)
 
 ##sanity check - is there a difference in qualitative stressor/training stress ratings? 
 t.test(quest$boat_score, quest$dungeon_score)
