@@ -14,7 +14,7 @@ library(rstatix)
 ################ Read in data, normalise SDNN values ################ 
 ##################################################################### 
 
-setwd("PATH")
+setwd("/Users/luciedaniel-watanabe/Desktop/NT:PhD/biofeedback/paper writeup/data")
 resp <- read.csv("resp_percentages.csv")
 quest <- read.csv("biofeedbackQuestionnaires.csv")
 
@@ -55,6 +55,8 @@ quest$stress_diff <- quest$dungeon_score - quest$boat_score
 SDNN$SDNN_boat_BL_diff <- SDNN$SDNN_training - SDNN$SDNN_baseline
 SDNN$SDNN_stress_BL_diff <- SDNN$SDNN_stress - SDNN$SDNN_baseline
 SDNN$SDNN_training_stress_diff <- SDNN$SDNN_stress - SDNN$SDNN_training
+
+resp$resp_stress_bl_diff <- resp$resp_stress - resp$resp_baseline
 
 
 #Difference in HR between training and baseline, and stressor and baseline
@@ -371,7 +373,7 @@ resp_SDNN_scatter <-
           add = "reg.line", conf.int = TRUE,
           cor.coef = TRUE, cor.method = "pearson",
           xlab = "Respiration Rate Difference", ylab = "cvSDNN Difference")+
-          ggtitle("Correlation between cvSDNN and Respiration Rate")+
+          ggtitle("Correlation between cvSDNN and Respiration Rate \n Difference (stressor - baseline)")+
           theme_minimal()+
           theme(plot.title = element_text(hjust = 0.5)) +
           theme(plot.title = element_text(margin=margin(0,0,13,0))) +
