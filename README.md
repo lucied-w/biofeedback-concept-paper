@@ -148,5 +148,7 @@ SDNN
 ![unnamed-chunk-8-1](https://github.com/user-attachments/assets/4683b9b2-85bf-41d7-abe1-19aa87ec5398)
 
 
+## Uncorrected SDNN data
 
+This analysis can be run using the uncorrected SDNN data, as seen in the supplement. All that is required is commmenting out lines 34 - 41 of the provided R script, which is the section used to adjust the SDNN values for HR. 
 
