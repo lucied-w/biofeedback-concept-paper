@@ -105,25 +105,23 @@ SDNN and respiratory differences from baseline to stressor.
 ## and the difference in SDNN (stressor - baseline)
 
 
-    ## 
     ##  Pearson's product-moment correlation
     ## 
     ## data:  resp_cardio$resp_stress_bl_diff and resp_cardio$SDNN_stress_BL_diff
-    ## t = 2.3725, df = 24, p-value = 0.02603
+    ## t = -2.3725, df = 24, p-value = 0.02603
     ## alternative hypothesis: true correlation is not equal to 0
     ## 95 percent confidence interval:
-    ##  0.05835787 0.70430180
+    ##  -0.70430180 -0.05835787
     ## sample estimates:
     ##       cor 
-    ## 0.4358572
+    ## -0.4358572
 
-
-![unnamed-chunk-7-2](https://github.com/user-attachments/assets/3c7e57f6-33f8-4cc0-b2a4-8a834041c16b)
+![Rplot](https://github.com/user-attachments/assets/bf945c1b-29e3-4ff7-ac33-bb4cdbadba2a)
 
 
 # Combined figures for manuscript 
 
-![figure2](https://github.com/user-attachments/assets/8ba7bf78-c535-40b5-bd3c-be68e2db323b)
+![figure2](https://github.com/user-attachments/assets/c8b84110-aa8b-4e29-baeb-f09643e83cc7)
 
 
 # Questionnaire results
