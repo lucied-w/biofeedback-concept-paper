@@ -80,6 +80,8 @@ SDNN$SDNN_boat_BL_diff <- SDNN$SDNN_training - SDNN$SDNN_baseline
 SDNN$SDNN_stress_BL_diff <- SDNN$SDNN_stress - SDNN$SDNN_baseline
 SDNN$SDNN_training_stress_diff <- SDNN$SDNN_stress - SDNN$SDNN_training
 
+resp$resp_stress_bl_diff <- resp$resp_stress - resp$resp_baseline
+
 
 #Difference in HR between training and baseline, and stressor and baseline
 HR$HR_boat_BL_diff <- HR$HR_training - HR$HR_baseline
